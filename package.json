@@ -1,0 +1,22 @@
+{
+  "name": "grpc-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-degree": "node ./degree/main.js",
+    "start-processor": "node ./process/main.js",
+    "start-main": "node ./main/main.js",
+    "start": "concurrently 'npm run start-degree' 'npm run start-processor' 'npm run start-main'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.10.8",
+    "@grpc/proto-loader": "^0.7.13",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

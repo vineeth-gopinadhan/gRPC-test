@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "4a8ed7a4-509d-4eb7-993d-4014eae01c9f",
+		"name": "gRPC-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31158704"
+	},
+	"item": [
+		{
+			"name": "/studentOnboard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Good Product\",\n    \"description\": \"asdasdasdasdasdasd\",\n    \"price\": 30\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/products"
+			},
+			"response": []
+		},
+		{
+			"name": "/onboardingStatus",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
